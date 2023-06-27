@@ -1,2 +1,6 @@
+from serial.tools import list_ports
+import serial
+ports = serial.tools.list_ports.comports()
 
-# Interface with the device and get list of connected arduinos
+for port, desc, hwid in sorted(ports):
+        print("{}: {} [{}]".format(port, desc, hwid))

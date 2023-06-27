@@ -4,6 +4,7 @@ class AbstractNode:
         self.uid = None
         self.x_pos = None
         self.y_pos = None
+        self.size
 
     def get_uid(self):
         return self.uid
@@ -22,3 +23,15 @@ class AbstractNode:
 
     def set_y(self, val):
         self.y_pos = val
+
+    def get_size(self):
+        return self.size
+
+    def set_size(self, val):
+        self.size = val
+
+    def bottom_left(self):
+        return self.x_pos - self.size, self.y_pos - self.size
+
+    def top_right(self):
+        return self.x_pos + self.size, self.y_pos + self.size

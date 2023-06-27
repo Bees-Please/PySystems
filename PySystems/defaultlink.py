@@ -1,11 +1,11 @@
 from abstractlink import AbstractLink
 
 
-class DefaultNode(AbstractLink):
+class DefaultLink(AbstractLink):
 
     def __init__(self):
-        self.start_node
-        self.end_node
+        self.start_nodule
+        self.end_nodule
 
     def get_shape(self):
         return self.shape
