@@ -1,5 +1,8 @@
 class AbstractNode:
-
+    # Abstract node, not for display, pretty much just for being here
+    # And maintaining an extendable set of standard attributes.
+    # Not sure why I went with this structure, but let's roll with it
+    # Until someone tells me I'm stupid or makes a pull request.
     def __init__(self):
         self.uid = None
         self.x_pos = None

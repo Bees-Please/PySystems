@@ -1,6 +1,6 @@
 from abstractnode import AbstractNode
 
-
+# Default node for actual display
 class DefaultNode(AbstractNode):
 
     def __init__(self):

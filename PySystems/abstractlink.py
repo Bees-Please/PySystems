@@ -1,5 +1,7 @@
 class AbstractLink:
-
+    # Same idea as abstractnode, not for display purposes.
+    # If anyone has architecture tips, please send them
+    # My way.
     def __init__(self):
         self.uid
         self.x1_pos
